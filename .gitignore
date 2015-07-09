@@ -12,18 +12,18 @@
 *.swo
 *.swp
 
-**/.classpath
+# **/.classpath
 # The master checkstyle configuration is in project_conf
 **/.checkstyle
 **/.DS_Store
 **/.externalToolBuilders
-**/.project
+# **/.project
 **/.pydevproject
 **/.syntastic_javac_config
 **/.zanata-cache
 **/tags
 **/.tags*
-**/.settings
+# **/.settings
 
 **/build/
 **/custom.yaml
