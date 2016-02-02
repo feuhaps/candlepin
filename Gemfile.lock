@@ -58,6 +58,7 @@ GEM
 
 PLATFORMS
   ruby
+  x64-mingw32
 
 DEPENDENCIES
   builder
@@ -70,3 +71,6 @@ DEPENDENCIES
   rest-client (~> 1.6.0)
   rspec
   stringex
+
+BUNDLED WITH
+   1.10.5
