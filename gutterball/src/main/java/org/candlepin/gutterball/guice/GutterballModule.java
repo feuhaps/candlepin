@@ -195,8 +195,8 @@ public class GutterballModule extends AbstractModule {
     @Provides
     protected ValidatorFactory getValidationFactory(
         Provider<MessageInterpolator> interpolatorProvider) {
-        HibernateValidatorConfiguration configure =
-            Validation.byProvider(HibernateValidator.class).configure();
+        HibernateValidatorConfiguration configure = null;  // TODO JH Changed due to ExtendJ errors
+//            Validation.byProvider(HibernateValidator.class).configure();
 
         configure.messageInterpolator(interpolatorProvider.get());
         return configure.buildValidatorFactory();

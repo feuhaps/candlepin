@@ -117,7 +117,8 @@ public class HornetqContextListener {
             try {
                 Class<?> clazz = this.getClass().getClassLoader().loadClass(
                     listeners.get(i));
-                eventSource.registerListener((EventListener) injector.getInstance(clazz));
+//                eventSource.registerListener((EventListener) injector.getInstance(clazz));
+                eventSource.registerListener(null); // TODO JH Changed due to ExtendJ errors
             }
             catch (Exception e) {
                 log.warn("Unable to register listener " + listeners.get(i), e);

@@ -140,10 +140,10 @@ public class ConsumerTrendReport extends Report<ReportResult> {
         );
 
         ResteasyProviderFactory.pushContext(Page.class, page);
-
-        return useCustom ?
-            new ReasonGeneratingReportResult(page.getPageData(), this.messageGenerator) :
-            new ConsumerTrendReportDefaultResult(page.getPageData());
+        return null; // TODO JH Changed due to ExtendJ errors
+//        return useCustom ?
+//            new ReasonGeneratingReportResult(page.getPageData(), this.messageGenerator) :
+//            new ConsumerTrendReportDefaultResult(page.getPageData());
     }
 
 }
